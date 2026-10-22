@@ -1,0 +1,4 @@
+# ~/.bash_login: executed for interactive shells
+
+source ~/.profile
+source ~/.bashrc

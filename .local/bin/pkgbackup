@@ -1,0 +1,12 @@
+#!/bin/sh -u
+
+pkgdir="${XDG_CONFIG_HOME:-$HOME/.config}/packages"
+
+# Create package directory
+if [ ! -e "$pkgdir" ]; then
+	mkdir -p "$pkgdir"
+fi
+
+# Export package lists
+command -v apt >/dev/null && apt-mark showmanual > "$pkgdir"/apt
+command -v flatpak >/dev/null && flatpak list --app --columns=ref > "$pkgdir"/flatpak

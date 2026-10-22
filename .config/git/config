@@ -1,0 +1,11 @@
+[user]
+	name = "Callum Andrew"
+	email = candrew22@users.noreply.github.com
+
+[alias]
+	setcbmail = config user.email candrew@noreply.codeberg.org
+	setglmail = config user.email candrew22@users.noreply.gitlab.com
+
+[merge]
+	conflictStyle = zdiff3
+	tool = nvimdiff
