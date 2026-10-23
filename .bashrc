@@ -28,7 +28,7 @@ if [ -n "$colorise" ]; then
 	ls_colours=" --color=auto"
 fi
 
-alias ls="ls -F$ls_colours"
+alias ls="ls -F$ls_colours --group-directories-first"
 alias ll="ls -l"
 alias la="ls -lAh"
 
